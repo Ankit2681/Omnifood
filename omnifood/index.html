@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="We are a technology company first, but with a major focus on consumer well-being through a healthy diet. Most people are very busy with their jobs, family and friends, and other important activities, which doesn't leave much time for cooking. This might lead to a poor diet and lasting health consequences. We want to solve this problem by using an AI-centric approach. Users can use our app to select their diet and foods they like and dislike, and our AI algorithm will create a custom and individual weekly meal plan. But we don't stop there. We partner with restaurants and other cooking partners to actually cook and deliver all meals from the generated meal plans, in selected cities. All this will be packed up in a monthly subscription, where users can choose between receiving one or two meals per day, every single day of the month.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>OMNIFOOD</title>
+    <link rel="icon" href="img/logos/favicon.png" type="image/icon">
+    <link rel="stylesheet" href="my.css">
+
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="success-popup" id="popup">
+            <img src="https://gatesbbq.com/wp-content/uploads/2017/04/checkmarksuccess.gif" height="145px" weight="145px" alt="">
+            <!-- <p>DONE</p> -->
+        </div>
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="img/logos/omnifood-logo.png" alt="OMNIFOOD"></a>
+                <nav class="navigation">
+                    <ul>
+                        <li class="nav" >
+                            <a href="#work">HOW IT WORKS</a>
+                            <a href="#meals">MEALS</a>
+                            <a href="#price">PRICING</a>
+                            <a href="#free-food"><button id="free-btn">TRY FOR FREE</button></a>
+                        </li>
+                    </ul>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="close-menu" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </nav>
+                <svg xmlns="http://www.w3.org/2000/svg" class="open-menu" fill="none" viewBox="0 0 24 24" >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+            </div>
+        </div>
+        <div class="hero-section">
+            <h1>A <strong>HEALTHY</strong> meal delivered to your door, <br> every single day. <br><br>
+                <p >The smart 365-days-per-year food subscription that <br>will make you eat healthy again. Tailored to your<br> personal tastes and nutritional needs.<br> We have delivered 250,000+ meals last year! <br> <button>EXPLORE </button> <a href="#free-food"><button id="sign-up-btn" >SIGN-UP</button></a></p>
+            </h1>
+            <div class="hero-img">
+                <img src="img/pics/hero.png" alt="Hero">
+            </div>
+        </div>
+        <div class="brand-partner">
+            <img src="img/logos/business-insider.png" alt="buisiness-insider">
+            <img src="img/logos/forbes.png" alt="forbes">
+            <img src="img/logos/techcrunch.png"  alt="techcrunch">
+            <img src="img/logos/the-new-york-times.png" alt="the-new-york-times">
+            <img src="img/logos/usa-today.png"  alt="usa-today">
+        </div>
+        <div class="working-label" id="work">
+            <h4>How Omnifood works</h4>
+            <h2>Your daily dose of health in 3 simple steps</h2>
+        </div>
+        <div class="working" >
+
+            <div id="one">
+                <p><strong><span>1.</span><br>Tell us what you like (and what not):</strong><br><br> Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!</p>
+            </div>
+
+            <div id="two">
+                <img src="img/pics/app-screen-1.png" height="450px" alt="first">
+            </div>
+            
+            <div id="three">
+                <img src="img/pics/app-screen-2.png" height="450px" alt="second">
+            </div>
+
+            <div id="four">
+                <p><strong><span>2.</span><br> Approve your weekly meal plan:</strong><br><br> Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
+            </div>
+            <!-- <img src="img/pics/app-screen-2.png" height="450px" alt="second"> <br> -->
+
+            <div id="five">
+                <p><strong><span>3.</span><br> Receive meals at convenient time:</strong><br><br> Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!</p>
+            </div>
+
+            <div id="six">
+                <img src="img/pics/app-screen-3.png" height="450px" alt="third">
+            </div>
+        </div>
+        <div class="menu-label">
+            <h4 id="meals">Meals</h4>
+        <h3>Omnifood AI chooses from 5,000+ recipes</h3>
+        <p style="color: rgb(0, 0, 0 , 0.5); margin-left: 60px; font-weight: 100;">Technology makes life better than ever.</p>
+        </div>
+            <div class="meals-menu" >
+                <div class="meal-one">
+                    <img src="img/meals/meal-1.jpg" width="350px" height="300px" alt="meal-1">
+                    <h6>Vegetarian</h6>
+                    <h4>Japanese Gyozas </h4>
+                    <ul>
+                        <li> Category : Vegetarian</li>
+                        <li> Calories : 650</li>
+                        <li>NutriScore (Registered) : 74 </li>
+                        <li>Average rating : 4.9</li>
+                        <li>Number reviews : 537</li>
+                    </ul>
+                    <button id="meal-btn" type="submit">Order</button>
+                </div>
+                <div class="meal-two">
+                    <img src="img/meals/meal-2.jpg" width="350px" height="300px" alt="meal-2">
+                    <h6>Vegetarian</h6>
+                    <h4>Avocado Salad </h4>
+                    <ul>
+                        <li>Category : Vegan and Paleo</li>
+                        <li>Calories : 400</li>
+                        <li>NutriScore (Registered) : 92</li>
+                        <li>Average rating : 4.8</li>
+                        <li>Number reviews : 441</li>
+                    </ul>
+                    <button id="meal-btn" type="submit">Order</button>
+                </div>
+            </div>
+            <a id="more">more recepies </a>
+            <div class="customer-label">
+                <h4>GALLERY</h4>
+                <h3>Happy Customers</h3>
+                <p style="color: rgb(0, 0, 0 , 0.5); margin-left: 60px; font-weight: 100;">Quality attracts people</p>
+            </div>
+            <div class="testimonials">
+                <div class="customers">
+                    <img src="img/customer/ben.jpg" alt="ben">
+                <p id="ben"><strong>BEN : </strong> AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore! </p>
+                <img id="dave" src="img/customer/dave.jpg" alt="dave">
+                <p><strong>DAVE : </strong> Healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                <img src="img/customer/hannah.jpg" alt="hannah">
+                <p id="hannah"><strong>HANNAH : </strong> Got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.</p>
+                <img id="steve" src="img/customer/steve.jpg" alt="steve">
+                <p><strong>STEVE : </strong> It is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now!</p>
+                <p></p>
+                <a href="#" style="text-decoration: none;"><p style="color:darkorange; display: flex; justify-content: flex-end; cursor: pointer;">and many more...</p></a>
+                </div>
+                <div class="gallery">
+                    <img src="img/gallery/gallery-1.jpg" alt="One">
+                    <img src="img/gallery/gallery-2.jpg" alt="One">
+                    <img src="img/gallery/gallery-3.jpg" alt="One">
+                    <img src="img/gallery/gallery-4.jpg" alt="One">
+                    <img src="img/gallery/gallery-5.jpg" alt="One">
+                    <img src="img/gallery/gallery-6.jpg" alt="One">
+                    <img src="img/gallery/gallery-7.jpg" alt="One">
+                    <img src="img/gallery/gallery-8.jpg" alt="One">
+                    <img src="img/gallery/gallery-9.jpg" alt="One">
+                    <!-- <img src="img/gallery/gallery-10.jpg" alt="One"> -->
+                </div>
+            </div>
+            <div class="price-label">
+                    <h4 id="price">PLANS</h4>
+                <h3>We have two Pricing Plans </h3>
+                <p style="color: rgb(0, 0, 0 , 0.5); margin-left: 60px; font-weight: 100;">Prices include all applicable taxes. Users can cancel at any time*.</p>
+            </div>
+            <div class="pricing" >
+                <div class="price-one">
+                    <!-- <img src="img/meals/meal-1.jpg" width="350px" height="300px" alt="meal-1"> -->
+                    <h4>Starters: <strong>$399</strong> per month </h4>
+                    <ul>
+                        <li>1 meal per day</li>
+                        <li>Order btw 11am and 9pm</li>
+                        <li>Delivery is free</li>
+                        <li id="list">No access</li>
+                    </ul>
+                    <button id="price-btn1">GET</button>
+                </div>
+                <div class="price-two label">
+                    <!-- <img src="img/meals/meal-1.jpg" width="350px" height="300px" alt="meal-1"> -->
+                    <!-- <img src="https://smallfarmnationacademy.com/wp-content/uploads/2018/08/best-value-tag-150x150.png" alt="best value"> -->
+                    <h4>Complete: <strong>$649</strong> per month </h4>
+                    <ul>
+                        <li>2 meal2 per day</li>
+                        <li>Order 24/7</li>
+                        <li>Delivery is free</li>
+                        <li>Get access to latest recipes</li>
+                    </ul>
+                    <button id="price-btn">GRAB OFFER</button>
+                </div>
+            </div>
+            <div class="feature">
+                <p><strong>Never cook again ! :</strong><br><br> Our subscriptions cover 365 days per year, even including major holidays.</p>
+                <p><strong> Local and organic :</strong><br><br> Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+                <p><strong>No waste :</strong><br><br> All our partners only use reusable containers to package all your meals.</p>
+                <p><strong>Anytime : </strong><br><br> Going on vacation? Just pause your subscription, and we refund unused days. "</p>
+            </div>
+            <div class="free" id="free-food">
+                <div class="signup">
+                    <h2><strong>Healthy, tasty and hassle-free</strong> meals are waiting for you.<br> Start eating well today. You can cancel or pause anytime.<br> And the <strong>First Meal</strong> is on us!</h2>
+                    <form action="#" method="">
+                        <label for="signup">NAME</label>
+                        <input type="text" id="name" value="" onkeypress=" return testing(this)" placeholder="" required>
+                        <label for="signup">TELEPHONE</label>
+                        <input type="text" id="tele" value="" onkeypress=" return testing(this)" placeholder="" required>
+                        <label for="signup">ADDRESS</label>
+                        <input type="text"  id="address" value="" onkeypress=" return testing(this)" placeholder="" required>
+                        <label for="signup">PINCODE</label>
+                        <input type="text" id="code" value="" onkeypress=" return testing(this)" placeholder="" required>
+                        <button class="btn-btn" type="button" >SIGN-IN</button>
+                        <p id="success-message"></p>
+                    </form>
+                    <!-- <button class="btn-btn" >GET</button> -->
+                </div>
+
+            </div>
+            <footer>
+                <div class="contact">
+                    <h1>CONTACT</h1>
+                    <p><strong>Address :</strong> 623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+                    <p><strong>Phone : </strong> 415-201-6370</p>
+                    <p><strong>Email : </strong><a href="hello@omnifood" type="email" target="blank">hello@omnifood.com</a></p>
+                    <a href="#"><img src="img/logos/omnifood-logo.png" width="150px" alt="OMNIFOOD"></a>
+                    <p id="copy">copyright &copy; <span class="year">2045</span> by Ankit Sharma</p>
+                </div>
+            </footer>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>

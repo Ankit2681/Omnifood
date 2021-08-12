@@ -1,0 +1,475 @@
+@media only screen and  (max-width: 1200px) {
+    *{
+        margin: 0%;
+    padding: 0;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+    }
+    .hero-section h1{
+        font-size: 2.2rem;
+    }
+    .hero-section p{
+        margin-top: -180px;
+    }
+    .customers{
+       grid-template-rows: repeat(4,130px);
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 5px;
+    }
+    .gallery img{
+        width: 140px;
+        height: 140px;
+    }
+    .feature p strong{
+        color: #e67e22;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    *{
+        margin: 0%;
+    padding: 0;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+    }
+    .open-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .close-menu{
+        /* display: block; */
+        position: absolute;
+        cursor: pointer;
+        /* z-index: 1; */
+        stroke: black;
+        right: 50px;
+        /* width: 14px; */
+        /* transition: 2s; */
+    }
+    .nav{
+        visibility: hidden;
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* left: 0; */
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        right: 0;
+        /* animation: slide 2s  ease-in-out  left;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite; */
+    } 
+    /* .style{
+        transition: 0.5s ease-in-out;
+        transform: translateX(-100%);
+    } */
+    .hero-section {
+        padding: 40px;
+    }
+    .hero-section img{
+        width: 40vw;
+        height: 380px;
+        margin-left: 20px;
+    }
+    .hero-section img:hover{
+        transition: 0.4s all ease-in-out;
+        transform: scale3d(1.2,1.2,1.2);
+        cursor: pointer;
+    }
+    .hero-section p {
+        margin-top: -100px;
+        margin-left: 10px;
+        color: whitesmoke;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .hero-section h1{
+        margin-left: 10px;
+        color: white;
+        font-size: 2.2rem;
+    }
+    .brand-partner img{
+        width: 15vw;
+        filter:grayscale(100%);
+    }
+    .working{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 80px;
+        column-gap: 200px;
+        row-gap: 100px;
+    }
+    .meals-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 80px 60px 80px 60px;
+        background-color: #f5f5f5;
+        gap: 50px;
+    }
+    .testimonials{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        column-gap: 50px;
+        background-color: #f9f9f9;
+    }
+    .customers img{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-left: 0.5rem;
+    }
+    .customers{
+        display: grid;
+        grid-template-columns: 100px 300px;
+        row-gap: 0.9rem;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-content: flex-start;
+        gap: 5px;
+    }
+    .gallery img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .pricing{
+        background-color: #f9f9f9;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem;
+        gap: 3rem;
+    }
+    .price-one{
+        background-color:white;
+        border: 0.5px solid #F0B17A;
+        width: 30vw;
+        margin-left: 0%;
+    }
+    .price-two{
+        background-color: #fdf2e9;
+        width: 30vw;
+        margin-right: 0%;
+    }
+    .price-one h4{
+        font-size: 2rem;
+    }
+    .price-two h4{
+        font-size: 2rem;
+        color: black;
+    }
+    .price-two ul li {
+        font-weight: 100;
+        color: black;
+        margin: 10px;
+        list-style: none;
+        /* font-size: 0.9rem; */
+    }
+    .price-two button{
+        border: none;
+        background-color: #f59139;
+        padding: 10px;
+        font-weight: 100;
+        border-radius: 6px;
+    }
+    .price-one button{
+        border: none;
+        /* color: white; */
+        background-color: #EB974E;
+        padding: 10px;
+        font-weight: 100;
+        border-radius: 6px;
+        /* margin-top: 40px; */
+    }
+    .signup form{
+        width: 38.5vw;
+    }
+    .signup input{
+        width: 37vw;
+    }
+    .signup h2{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: white;
+        overflow-x: hidden;
+    }
+    .signup h2 strong{
+        font-size: 2.6rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 3px;
+    }
+    .contact a{
+        align-self: flex-end;
+        margin-top: 20px;   
+    }
+    .contact{
+        gap: 20px;
+    }
+}
+@media only screen and (min-width: 348px) and (max-width: 640px){
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-size: 15px;
+    }
+    .hero-section{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 50px; */
+        background-color: #e67e22;
+        margin: 0rem;
+    }
+    .hero-img img{
+        width: 250px;
+        height: 250px;
+        /* margin-right: 100px; */
+        margin-left: 40px;
+        margin-top: 2rem;
+    }
+    .hero-section h1{
+        /* margin-left: 100px; */
+        color: white;
+        font-size: 2rem;
+    }
+    .hero-section strong{
+        font-size: 3.2rem;
+    }
+    .open-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .close-menu{
+        /* display: block; */
+        position: absolute;
+        cursor: pointer;
+        /* z-index: 1; */
+        stroke: black;
+        right: 50px;
+        /* width: 14px; */
+        /* transition: 2s; */
+    }
+    .nav{
+        visibility: hidden;
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* left: 0; */
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        right: 0;
+    }
+    .brand-partner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 10px;
+        gap: 20px;
+    }
+    .brand-partner img{
+        width: 20vw;
+        filter:grayscale(100%);
+    }
+    .testimonials{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+        column-gap: 0px;
+        background-color: #f9f9f9;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        padding: 15px;
+    }
+    .gallery img{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    .customers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.3rem;
+        padding: 30px;
+    }
+    .customers img{
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+    }
+    .free{
+        background: url("https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGFyayUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+    }
+    
+/* content lables */
+
+.working-label h4{
+    color: #e67e22;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.working-label h2{
+    font-size: 2.6rem;
+    margin-left: 30px;
+}
+.menu-label h4{
+    color: #e67e22;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.menu-label h3{
+    font-size: 2.6rem;
+    margin-left: 30px;
+}
+.customer-label h4{
+    color: #e67e22;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.customer-label h3{
+    font-size: 2.6rem;
+    margin-left: 30px;
+}
+.price-label h4{
+    color: #e67e22;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.price-label h3{
+    font-size: 2.6rem;
+    margin-left: 30px;
+}
+.pricing{
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+}
+.price-one,.price-two{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+    padding: 2rem;
+    border-radius: 15px;
+}
+.price-one{
+    background-color:white;
+    border: 0.5px solid #F0B17A;
+    width: 50vw;
+    margin-left: 12%;
+}
+.price-two{
+    background-color: #fdf2e9;
+    width: 50vw;
+    margin-left: 12%;
+}
+.price-two h4{
+    font-size: 2.2rem;
+    color: black;
+}
+.price-two button{
+    border: none;
+    background-color: #f59139;
+    padding: 10px;
+    font-weight: 100;
+    border-radius: 6px;
+}
+.price-two ul li {
+    font-weight: 100;
+    color: black;
+    margin: 10px;
+    list-style: none;
+}
+.price-two ul li::before {
+    /* <!-- Unicode for >> character --> */
+            content: "✔";
+            margin-right: 20px;
+            font-size: 1rem;
+    
+}
+.price-one ul li::before {
+    /* <!-- Unicode for >> character --> */
+            content: "✔";
+            margin-right: 20px;
+            font-size: 1rem;
+}
+#list::before{
+            content: "✖";
+            margin-right: 20px;
+            font-size: 1rem;
+}
+.working p strong{
+    font-size: 1rem;
+}
+.working p span{
+    font-size: 2.3rem;
+    color: #e5e5e5;
+}
+.working{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+    /* padding: 20px; */
+}
+.working img{
+    height: 200px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+}
+.signup h2{
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: white;
+    width: 350px;
+    margin-left: -40px;
+    /* overflow-x: hidden; */
+}
+.signup h2 strong{
+    font-size: 2rem;
+}
+.contact a{
+    align-self: flex-end;
+    margin-top: 10px;   
+}
+}
